@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Diem.cs" />
+    <Compile Include="Entities\GiaoVien.cs" />
+    <Compile Include="Entities\HocKy.cs" />
+    <Compile Include="Entities\HocSinh.cs" />
+    <Compile Include="Entities\LopHoc.cs" />
+    <Compile Include="Entities\MonHoc.cs" />
+    <Compile Include="Entities\NamHoc.cs" />
+    <Compile Include="Entities\PhanCongGiangDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Entities\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

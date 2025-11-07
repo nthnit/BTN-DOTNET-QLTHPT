@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HocSinh\HocSinhBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Diem\" />
     <Folder Include="GiaoVien\" />
     <Folder Include="HocKy\" />
-    <Folder Include="HocSinh\" />
     <Folder Include="LopHoc\" />
     <Folder Include="MonHoc\" />
   </ItemGroup>

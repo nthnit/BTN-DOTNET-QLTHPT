@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using QLTHPT.Models.Entities;
+using QLTHPT.DAL.DbContext;
 
 namespace QLTHPT.DAL.Repositories
 {
@@ -18,7 +19,7 @@ namespace QLTHPT.DAL.Repositories
         {
             var list = new List<HocSinh>();
             
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"
@@ -47,7 +48,7 @@ namespace QLTHPT.DAL.Repositories
         /// </summary>
         public HocSinh GetById(int id)
         {
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"
@@ -78,7 +79,7 @@ namespace QLTHPT.DAL.Repositories
         /// </summary>
         public bool Insert(HocSinh entity)
         {
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"
@@ -102,7 +103,7 @@ namespace QLTHPT.DAL.Repositories
         /// </summary>
         public bool Update(HocSinh entity)
         {
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"
@@ -128,7 +129,7 @@ namespace QLTHPT.DAL.Repositories
         /// </summary>
         public bool Delete(int id)
         {
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = "DELETE FROM HocSinh WHERE MaHS = @MaHS";
@@ -148,7 +149,7 @@ namespace QLTHPT.DAL.Repositories
         {
             var list = new List<HocSinh>();
             
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"
@@ -182,7 +183,7 @@ namespace QLTHPT.DAL.Repositories
         {
             var list = new List<HocSinh>();
             
-            using (var connection = DbContext.DatabaseConnection.CreateConnection())
+            using (var connection = DatabaseConnection.CreateConnection())
             {
                 connection.Open();
                 string query = @"

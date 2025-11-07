@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbContext\DatabaseConnection.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\HocSinhRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DbContext\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\QLTHPT.Models\QLTHPT.Models.csproj">
       <Project>{d4e5f6a7-b8c9-4d5e-9f8a-4b5c6d7e8f9a}</Project>
